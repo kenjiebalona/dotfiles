@@ -39,6 +39,22 @@ $ brew install --cask alacritty
 
 [Install Amazon Q for command line](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-getting-started-installing.html)
 
+## Adding a new dotfile
+
+**Create a directory** Inside the dotfiles directory, create a new directory for the dotfile you want to add. Example: '.zshrc'
+
+```bash
+$ mkdir -p ~/dotfiles/zsh
+$ mv ~/.zhrc ~/dotfiles/zsh
+```
+
+### Stow a dotfile
+
+```bash
+$ cd ~/dotfiles
+$ stow zsh
+```
+
 ## Adding a new config
 
 **Create a directory** Inside the dotfiles directory, create a new directory for the config you want to add. Example: 'nvim'
