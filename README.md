@@ -36,7 +36,7 @@ then use GNU stow to create symlinks
 $ stow .
 ```
 
-Additional installation for
+## Additional installation
 
 Terminal
 
