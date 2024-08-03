@@ -81,3 +81,15 @@ To remove the symlinks created by Stow, you can use the `stow -D` command:
 $ cd ~/dotfiles
 $ stow -D nvim
 ```
+
+## Avoiding conflicts
+
+Before stowing your dotfiles, you may want to run the following commands to avoid conflicts.
+
+### neovim
+
+```bash
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+```
