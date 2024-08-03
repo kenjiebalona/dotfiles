@@ -26,14 +26,7 @@ $ cd dotfiles
 To ensure all necessary homebrew packages are installed
 
 ```bash
-$ chmod +x install_brew_packages.sh
 $ ./install_brew_packages.sh
-```
-
-then use GNU stow to create symlinks
-
-```bash
-$ stow .
 ```
 
 ## Additional installation
@@ -45,3 +38,30 @@ $ brew install --cask alacritty
 ```
 
 [Install Amazon Q for command line](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-getting-started-installing.html)
+
+## Adding a new config
+
+**Create a directory** Inside the dotfiles directory, create a new directory for the config you want to add. Example: 'nvim'
+
+```bash
+$ mkdir -p ~/dotfiles/nvim/.config
+$ mv ~/.config/nvim ~/dotfiles/nvim/.config
+```
+
+### Stow a config
+
+```bash
+$ cd ~/dotfiles
+$ stow nvim
+```
+
+This will create a symlinks in your config directory (`~/.config`) for the files in the `nvim` directory.
+
+### Unstow
+
+To remove the symlinks created by Stow, you can use the `stow -D` command:
+
+```bash
+$ cd ~/dotfiles
+$ stow -D nvim
+```
