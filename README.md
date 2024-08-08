@@ -41,7 +41,8 @@ $ brew install --cask alacritty
 
 ## Adding a new dotfile
 
-**Create a directory** Inside the dotfiles directory, create a new directory for the dotfile you want to add. Example: '.zshrc'
+**Create a directory**
+Inside the dotfiles directory, create a new directory for the dotfile you want to add. Example: '.zshrc'
 
 ```bash
 $ mkdir -p ~/dotfiles/zsh
@@ -55,9 +56,12 @@ $ cd ~/dotfiles
 $ stow zsh
 ```
 
+This will create a symlinks in your home directory (`~`) for the file `.zshrc`.
+
 ## Adding a new config
 
-**Create a directory** Inside the dotfiles directory, create a new directory for the config you want to add. Example: 'nvim'
+**Create a directory**
+Inside the dotfiles directory, create a new directory for the config you want to add. Example: 'nvim'
 
 ```bash
 $ mkdir -p ~/dotfiles/nvim/.config
