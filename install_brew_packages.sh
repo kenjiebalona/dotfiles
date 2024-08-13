@@ -17,6 +17,7 @@ packages=(
   bat
   nvm
   tealdeer
+  yazi
   # Add other packages you need here
 )
 
