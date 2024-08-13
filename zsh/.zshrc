@@ -120,6 +120,7 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
 fi
 
 alias vim="nvim"
+alias lg="lazygit"
 alias zed="open -a /Applications/Zed.app/ -n"
 
 # Amazon Q post block. Keep at the bottom of this file.
