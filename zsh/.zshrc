@@ -107,6 +107,9 @@ alias vim="nvim"
 alias lg="lazygit"
 alias zed="open -a /Applications/Zed.app/ -n"
 
+# --- Scripts ---
+export PATH="$HOME/.config/scripts:$PATH"
+
 # --- Eza ---
 alias ls="eza --color=always --icons=always -l --no-filesize --no-time --no-user --no-permissions"
 alias ll="eza --color=always --icons=always -l -g"
@@ -118,7 +121,7 @@ alias ld="eza --color=always --icons=always -l -D"
 eval "$(fzf --zsh)"
 
 # --- Bat ---
-export BAT_THEME="Catppuccin Mocha"
+BAT_THEME="Catppuccin Mocha"
 
 # --- Zoxide ---
 eval "$(zoxide init zsh)"
