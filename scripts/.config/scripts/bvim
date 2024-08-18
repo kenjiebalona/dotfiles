@@ -1,0 +1,6 @@
+#!/bin/bash
+nvim "$(fzf --preview="bat --color=always {}")"
+
+# chmod +x ~/.config/scripts/bvim.sh
+# export PATH="$HOME/.config/scripts:$PATH"
+# source ~/.zshrc
