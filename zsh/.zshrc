@@ -101,12 +101,29 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+ 
+# --- Aliases ---
+alias vim="nvim"
+alias lg="lazygit"
+alias zed="open -a /Applications/Zed.app/ -n"
+
+# --- Eza ---
 alias ls="eza --color=always --icons=always -l --no-filesize --no-time --no-user --no-permissions"
 alias ll="eza --color=always --icons=always -l -g"
 alias la="eza --color=always --icons=always -l -a"
 alias lf="eza --color=always --icons=always -l -f"
 alias ld="eza --color=always --icons=always -l -D"
 
+# --- Fzf ---
+eval "$(fzf --zsh)"
+
+# --- Bat ---
+export BAT_THEME="Catppuccin Mocha"
+
+# --- Zoxide ---
+eval "$(zoxide init zsh)"
+
+# --- Starship ---
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
@@ -118,10 +135,6 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
   export PATH=/opt/homebrew/opt/ruby/bin:$PATH
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
-
-alias vim="nvim"
-alias lg="lazygit"
-alias zed="open -a /Applications/Zed.app/ -n"
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
