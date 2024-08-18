@@ -18,6 +18,8 @@ packages=(
   nvm
   tealdeer
   yazi
+  fzf
+  zoxide
   # Add other packages you need here
 )
 
