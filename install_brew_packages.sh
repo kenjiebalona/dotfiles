@@ -20,6 +20,7 @@ packages=(
   yazi
   fzf
   zoxide
+  lazygit
   # Add other packages you need here
 )
 
