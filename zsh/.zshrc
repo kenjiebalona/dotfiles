@@ -106,9 +106,11 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias lg="lazygit"
 alias zed="open -a /Applications/Zed.app/ -n"
+alias ip="echo $(ifconfig | grep broadcast | awk '{print $2}')"
+alias c="clear"
 
 # --- Scripts ---
-export PATH="$HOME/.config/scripts:$PATH"
+export PATH=$HOME/.config/scripts:$PATH
 
 # --- Eza ---
 alias ls="eza --color=always --icons=always -l --no-filesize --no-time --no-user --no-permissions"
@@ -129,6 +131,9 @@ eval "$(zoxide init zsh)"
 # --- Starship ---
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+
+# --- Aiken ---
+export PATH=$HOME/.aiken/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

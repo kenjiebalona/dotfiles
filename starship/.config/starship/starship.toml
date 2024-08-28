@@ -135,8 +135,5 @@ symbol = "󰟔 "
 [ruby]
 symbol = " "
 
-[rust]
-symbol = " "
-
 [scala]
 symbol = " "
