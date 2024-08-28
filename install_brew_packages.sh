@@ -6,7 +6,7 @@ packages=(
   stow
   curl
   node
-  htop
+  btop
   deno
   apple-music-discord-rpc
   eza
