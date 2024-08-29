@@ -24,27 +24,15 @@ packages=(
   # Add other packages you need here
 )
 
-# Function to check if a package is installed
-is_installed() {
-  brew list --formula | grep -q "^$1\$"
-}
-
 # Update Homebrew
-echo "Updating Homebrew..."
-brew update
+echo "Updating Homebrew..." && brew update
 
 # Install necessary packages
 for package in "${packages[@]}"; do
-  if is_installed "$package"; then
-    echo "$package is already installed."
-  else
-    echo "Installing $package..."
-    brew install "$package"
-  fi
+  brew list --formula "$package" &>/dev/null && echo "$package is already installed" || (echo "Installing $package..." && brew install "$package")
 done
 
 # Cleanup
-echo "Cleaning up..."
-brew cleanup
+echo "Cleaning up..." && brew cleanup
 
 echo "All packages are installed and updated!"
