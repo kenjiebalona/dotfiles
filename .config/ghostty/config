@@ -1,0 +1,28 @@
+# appearance
+theme = Carbonfox
+font-family = MonoLisa Nerd Font
+font-size = 15
+cursor-style = block
+cursor-invert-fg-bg = true
+cursor-style-blink = false
+adjust-cell-height = 10%
+mouse-hide-while-typing = true
+background-opacity = 1
+background-blur = true
+
+# macOS-specific settings
+macos-titlebar-style = hidden
+
+# window controls
+window-padding-balance = true
+window-colorspace = display-p3
+window-decoration = true
+window-padding-x = 10 
+window-save-state = always
+
+# auto update settings
+auto-update = check
+
+# Extras
+shell-integration-features = true
+copy-on-select = clipboard
