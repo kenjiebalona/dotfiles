@@ -1,5 +1,6 @@
 [core]
-	editor = code --wait
+	# editor = code --wait
+	editor = nvim
 	pager = delta
 [user]
 	name = kenjiebalona
