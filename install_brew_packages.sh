@@ -21,6 +21,7 @@ packages=(
   fzf
   zoxide
   lazygit
+  git-delta
   # Add other packages you need here
 )
 
