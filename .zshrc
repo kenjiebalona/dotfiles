@@ -142,4 +142,4 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
 
-export PATH="/opt/homebrew/opt/llvm@13/bin:$PATH"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
