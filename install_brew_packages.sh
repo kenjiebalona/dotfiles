@@ -22,6 +22,8 @@ packages=(
   zoxide
   lazygit
   git-delta
+  tree-sitter
+  tree-sitter-cli
   # Add other packages you need here
 )
 
