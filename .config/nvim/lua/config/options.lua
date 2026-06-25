@@ -11,4 +11,4 @@ vim.o.smartcase = true
 vim.o.cursorline = true -- Highlight the line where the cursor is on.
 vim.o.scrolloff = 10    -- Keep this many screen lines above/below the cursor.
 vim.o.list = true       -- Show <tab> and trailing spaces.
-vim.opt.listchars = { space = "·" }
+-- vim.opt.listchars = { space = "·" }

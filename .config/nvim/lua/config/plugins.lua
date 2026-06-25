@@ -24,10 +24,24 @@ require('nvim-autopairs').setup {
         map = "<M-e>", -- Alt+e to wrap selection with a pair
     },
 }
+
 require("mason").setup()
 require("mason-lspconfig").setup({
     ensure_installed = { "rust_analyzer", "gopls", "clangd", "ts_ls", "eslint", "lua_ls" },
     -- this auto-calls vim.lsp.enable() for whatever's installed
 })
-require("nightfox").setup {}
+
+require("nightfox").setup({
+    options = {
+        transparent = true,
+        terminal_colors = true,
+        dim_inactive = true,
+        styles = {
+            comments = "italic",
+            keywords = "bold",
+            functions = "italic",
+            types = "bold",
+        },
+    },
+})
 vim.cmd("colorscheme carbonfox")
