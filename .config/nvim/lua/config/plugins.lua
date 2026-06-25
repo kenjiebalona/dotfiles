@@ -33,14 +33,9 @@ require("mason-lspconfig").setup({
 
 require("nightfox").setup({
     options = {
-        transparent = true,
-        terminal_colors = true,
         dim_inactive = true,
         styles = {
-            comments = "italic",
             keywords = "bold",
-            functions = "italic",
-            types = "bold",
         },
     },
 })
