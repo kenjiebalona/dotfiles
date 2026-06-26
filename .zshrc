@@ -114,17 +114,16 @@ alias dsize="/bin/ls -d */ | xargs -I {} du -sh {}"
 export PATH=$HOME/.config/scripts:$PATH
 
 # --- Eza ---
-alias ls="eza --color=always --icons=always -l --no-filesize --no-time --no-user --no-permissions"
-alias ll="eza --color=always --icons=always -l -g"
-alias la="eza --color=always --icons=always -l -a"
-alias lf="eza --color=always --icons=always -l -f"
-alias ld="eza --color=always --icons=always -l -D"
+alias ls="eza --color=always --icons=always -l --group-directories-first -h --time-style=relative --git"
+alias lt="eza --color=always --icons=always -la --group-directories-first --tree --level=2"
+alias ll="eza --color=always --icons=always -la --group-directories-first -h --total-size"
+alias lr="eza --color=always --icons=always -la --sort=modified --time-style=relative"
 
 # --- Fzf ---
 eval "$(fzf --zsh)"
 
 # --- Bat ---
-BAT_THEME="Catppuccin Mocha"
+BAT_THEME="ayu-dark"
 
 # --- Zoxide ---
 eval "$(zoxide init zsh)"
